@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/retrato.css">
+    <link rel="stylesheet" href="css/menuresp.css">
+    <script src="menu.js" defer></script>
+    <title>Saúde Bucal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header><!--cabeçalho-->
+        <div class="interface">
+            <div class="logo">
+                <img src="imagens/saude-bucal_logo.png" alt="Logo do site">
+            </div><!--logo-->
+
+            <nav class="menu">
+                 <ul>
+                    <li><a href="#"id="quemsomos">Quem Somos</a></li>
+                    <li><a href="#nossas-especialidades">Serviços</a></li>
+                    <li><a href="#mapa">Onde Estamos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                 </ul>
+            </nav><!--menu-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+            
+            <div class="menu-responsivo" id="menu-responsivo">
+                <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+        
+                <nav>
+                    <ul>
+                        <li><a href="#"id="quemsomos">Quem Somos</a></li>
+                        <li><a href="#nossas-especialidades">Serviços</a></li>
+                        <li><a href="#mapa">Onde Estamos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div><!--menu-responsivo-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface-->
+    </header><!--cabeçalho-->
+
+    <main><!--conteudo-->
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Transformando sorrisos, transformando vidas !</h1>
+                        <p>A Saúde Bucal é uma clínica dedicada à excelência nos tratamentos odontológicos, onde uma equipe altamente qualificada, especializada em diversas áreas da Odontologia, utiliza as mais avançadas técnicas globais. Buscamos proporcionar aos nossos pacientes não apenas resultados eficazes, mas também conforto e rapidez no atendimento. Nossa clínica nasce da combinação das experiências de nossos sócios e do compromisso em promover o bem-estar, qualidade de vida e felicidade para cada paciente, respeitando suas necessidades individuais. Por isso, oferecemos uma gama diversificada de tratamentos, adaptados tanto clinicamente quanto financeiramente, para atender às especificidades de cada pessoa ou comunidade que atendemos.</p>
+                    </div><!--txt-topo-site-->
+
+                    <div class="img-topo-site">
+                        <img src="imagens/pessoa-sorrindo.jpg" alt="Pessoa feliz">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="especialidades"> 
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-especialidades">
+                        <img src="imagens/dentista.jpg" alt="Dentista">
+                    </div><!--img-especialidades-->
+
+                    <div class="txt-especialidades">
+                        <h1 id="nossas-especialidades">Nossas Especialidades</h1>
+                        <ul>
+                            <li>Clínico Geral</li>
+                            <p>Estabelece o primeiro contato com os pacientes, para identificar quais são os problemas bucais e os tipos de tratamentos mais adequados.</p>
+                            <li>Odontopediatria</li>
+                            <p>Atendimento especilizado para crianças.</p>
+                            <li>Ortodontia</li>
+                            <p>Corrige a posição dos dentes e dos ossos maxilares posicionados de forma inadequada.</p>
+                            <li>Implantodontia</li>
+                            <p>É a especialidade que faz implante dentário e promove a reabilitação oral de pacientes que sofrem perda de dente.</p>
+                        </ul>
+                    </div><!--txt-especialidades-->
+
+
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--especialidades-->
+                      
+        <div class="mapa" id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.2522811473173!2d-43.25606682491314!3d-22.86713717928309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997c023d2012a1%3A0x7a1a42ad90ee062a!2sAv.%20Paris%2C%2084%20-%20Bonsucesso%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021041-020!5e0!3m2!1spt-BR!2sbr!4v1715028274405!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!--mapa-->
+                     
+        <section class="info-site">
+            <div class="interface">
+                <h1 id="contato">Fale Conosco</h1>
+                <div class="flex">
+                    <div class="atendimento">
+                        <h2>Atendimento somente com hora marcada</h2>
+                        <p>Sorria sem medo, estamos aqui para cuidar de você. Venha conhecer nosso espaço, será um prazer tê-lo conosco.</p>
+                        <div class="agendamento">
+                            <a href="https://www.whatsapp.com/download?lang=pt_BR" target="_blank"><img src="imagens/icone_whatsapp.png" alt="Ícone do WhatsApp"> AGENDAR CONSULTA</a>
+                        </div><!--agendamento-->
+                    </div><!--atendimento-->
+                    
+                    <div class="informaçoes">
+                        <h3>ENDEREÇO</h3>
+                        <p>Av. Paris, 84 - Bonsucesso, Rio de Janeiro</p>
+                        <h3>ATENDIMENTO</h3>
+                        <p>Segunda a Sexta <br> 08H00 - 18H00</p>
+                        <p>Sábado <br> 08H00 - 14H00</p>
+                    </div><!--informaçoes-->
+                </div><!-- flex-->
+            </div><!--interface-->
+        </section><!--info-site-->
+    </main><!--conteudo-->
+
+    <div id="top">
+        <a href="#quemsomos"><i class="bi bi-arrow-up-square-fill"></i></a>
+    </div>
+
+    <footer> <!--rodapé-->
+        <div class="interface">
+            <p>Saúde Bucal - 2024</p>
+            <a href="https://www.instagram.com/saudebucal.rj/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div> <!--interface-->
+    </footer><!--rodapé-->
+</body>
+</html>

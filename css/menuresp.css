@@ -1,0 +1,60 @@
+/* PARA NÃO TER PROBLEMAS COM CARACTERES ESPECIAIS */
+@charset "UTF-8";
+
+/* DEIXANDO O MENU RESPONSIVO */
+.btn-abrir-menu i {
+    color: white;
+    font-size: 40px;
+}
+
+.menu-responsivo {
+    background-color: var(--cor5);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 70%;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu-responsivo.abrir-menu {
+    width: 70%;
+}
+
+.menu-responsivo.abrir-menu .overlay-menu {
+    display: block;
+}
+
+.menu-responsivo .btn-fechar {
+    padding: 20px 4%;
+}
+
+.menu-responsivo .btn-fechar i {
+    color: white;
+    font-size: 30px;
+}
+
+.menu-responsivo nav ul {
+    text-align: right;
+}
+
+.menu-responsivo nav ul a {
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.overlay-menu {
+   background-color: #2a231dad;
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 88888;
+   display: none;
+}

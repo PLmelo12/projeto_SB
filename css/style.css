@@ -1,0 +1,306 @@
+/* PARA NÃO TER PROBLEMAS COM CARACTERES ESPECIAIS */
+@charset "UTF-8";
+
+/* FONTES IMPORTADAS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ONDE DECLARO AS VARIÁVEIS */
+:root {
+    --cor1:#FFFFFF;
+    --cor2:#DBC9B9;
+    --cor3:#8E7F76;
+    --cor4:#655A53;
+    --cor5:#2A231D;
+
+    --fonte1: Arial, Verdana, Helvetica, sans-serif; 
+    --fonte2:"Oswald", sans-serif;
+    --fonte3:"Tajawal", sans-serif;
+    --fonte4:"Bebas Neue", sans-serif;
+    --fonte5: "Open Sans", sans-serif;
+}
+
+/* ROLAGEM DA PÁGINA */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ESTILO GERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor2);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+    background-color: var(--cor4);
+    padding: 20px 4%;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 200px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-family: var(--fonte2);
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+header a:hover {
+    color: white;
+    transform: scale(1.2);
+    transition-duration: .2s;
+}
+
+header ul li #quemsomos {
+    color: white;
+    transform: scale(1.2);
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-abrir-menu {
+    display: none;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+    background-color: white;
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site {
+    text-align: justify;
+}
+
+.topo-do-site .txt-topo-site h1 {
+    color: var(--cor5);
+    font-family: var(--fonte4);
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+.topo-do-site .txt-topo-site p {
+    font-family: var(--fonte5);
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+
+.topo-do-site .img-topo-site img {
+    width:500px;
+    border-radius: 20px;
+}
+
+/* ESTILO ESPECIALIDADES */
+.especialidades .img-especialidades img {
+    width: 400px;
+    border-radius: 30px;
+}
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.especialidades {
+    text-align: justify;
+}
+
+.especialidades .txt-especialidades h1 {
+    color: var(--cor5);
+    font-family: var(--fonte4);
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 2em;
+}
+
+.especialidades .txt-especialidades ul {
+    list-style: none;
+    list-style-type: "\1F5F8\00A0";
+}
+
+.especialidades .txt-especialidades li {
+    font-family: var(--fonte5);
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.especialidades .txt-especialidades p {
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/*  ESTILO MAPA */
+.mapa {
+    background-color: var(--cor1);
+    position: relative;
+    padding-bottom: 20%;
+}
+
+.mapa iframe {
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    height: 100%;  
+}
+
+/* ESTILO INFORMAÇÕES DO SITE  */
+section.info-site {
+    padding: 40px 4%;
+    
+}
+
+section.info-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+section.info-site .flex1 {
+    display: flex;
+    align-items: center;
+}
+
+.info-site h1 {
+    color: var(--cor5);
+    font-family: var(--fonte4);
+    font-weight: normal;
+    font-size: 3em;
+    line-height: 2em;
+}
+
+.info-site .atendimento {
+    text-align: center;
+}
+
+.info-site .atendimento h2  {
+    text-decoration: underline;
+    font-family: var(--fonte5);
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 2em;
+}
+
+.info-site .atendimento p {
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1em;
+    padding: 20px;
+}
+
+.info-site .atendimento img {
+    vertical-align: middle;
+    width: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.info-site .atendimento a {
+    background-color: #46c756;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.info-site .atendimento a:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
+    transition-duration: 0.5s;
+}
+
+.info-site .informaçoes {
+    text-align: center;
+}
+
+.info-site .informaçoes h3 {
+    font-family: var(--fonte3);
+    font-weight: 500;
+    line-height: 3em;
+}
+
+.info-site .informaçoes p {
+    font-family: var(--fonte5);
+    line-height: 1.2em;
+    font-size: 1em;
+}
+
+/* BOTÃO PARA VOLTAR AO TOPO */
+#top i{
+    color: var(--cor5);
+    font-size: 2.5em;
+    padding: 9px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.295);
+}
+
+/* ESTILO RODAPÉ */
+footer {
+    color: white;
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-family: var(--fonte1);
+}
+
+footer i {
+    font-size: 3em;
+    color: white;
+}
+
+footer .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

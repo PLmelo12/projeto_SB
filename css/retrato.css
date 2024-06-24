@@ -1,0 +1,95 @@
+/* PARA NÃO TER PROBLEMAS COM CARACTERES ESPECIAIS */
+@charset "UTF-8";
+
+/* DEIXANDO O SITE RESPONSIVO */
+@media screen and (max-width: 1040px) {
+
+    /* CLASSES GERAIS */
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .btn-abrir-menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .txt-topo-site h1 {
+        text-align: left;
+        font-size: 2.2em;
+        line-height: 1em;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESPECIALIDADE */
+
+    .especialidades .img-especialidades img {
+        width: 300px;
+    }
+
+    section.especialidades .flex {
+        gap: 40px;
+    }
+
+    .especialidades .txt-especialidades h1 {
+        font-size: 2.2em;
+        line-height: 1em;
+    }
+
+    section.especialidades {
+        padding: 20px 8%;
+    }
+
+    .especialidades .txt-especialidades li {
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+    
+    .especialidades .txt-especialidades p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    section.info-site {
+        padding: 20px 8%;
+    }
+
+    .info-site h1 {
+        font-size: 2.2em;
+        line-height: 1.5em;
+    }
+    
+    .info-site .atendimento h2  {
+        font-size: 1em;
+    }
+
+    .info-site .informaçoes {
+        margin-top: -80px;
+    }
+
+    .btn-topo {
+        display: none;
+    }
+    
+}    
+    
